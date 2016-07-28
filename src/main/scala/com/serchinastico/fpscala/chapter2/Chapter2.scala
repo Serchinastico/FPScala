@@ -1,4 +1,4 @@
-package chapter2
+package com.serchinastico.fpscala.chapter2
 
 object Chapter2 {
   // Exercise 2.1

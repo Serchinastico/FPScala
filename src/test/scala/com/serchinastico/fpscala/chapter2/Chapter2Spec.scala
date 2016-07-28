@@ -1,6 +1,5 @@
 package com.serchinastico.fpscala.chapter2
 
-import chapter2.Chapter2
 import org.scalatest.{FlatSpec, Matchers}
 
 class Chapter2Spec extends FlatSpec with Matchers {
