@@ -2,7 +2,7 @@ package com.serchinastico.fpscala.chapter2
 
 import org.scalatest.{FlatSpec, Matchers}
 
-class Chapter2Spec extends FlatSpec with Matchers {
+class Chapter2Exercise1Spec extends FlatSpec with Matchers {
   "fibonacci of 0" should "be equal to 0" in {
     Chapter2.fib(0) should be (0)
   }
@@ -48,5 +48,4 @@ class Chapter2Exercise2Spec extends FlatSpec with Matchers {
   "isSorted of an unsorted array" should "return false" in {
     Chapter2.isSorted(Array[Int](0, 1, 2, 3, 2), (a: Int, b: Int) => a < b) should be (false)
   }
-
 }
