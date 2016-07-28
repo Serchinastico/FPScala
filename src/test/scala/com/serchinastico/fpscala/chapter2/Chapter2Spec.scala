@@ -31,3 +31,22 @@ class Chapter2Spec extends FlatSpec with Matchers {
     Chapter2.fib(32) should be (2178309)
   }
 }
+
+class Chapter2Exercise2Spec extends FlatSpec with Matchers {
+  "isSorted of an empty array" should "return true" in {
+    Chapter2.isSorted(Array.empty, (a: Int, b: Int) => false) should be (true)
+  }
+
+  "isSorted of an unitary array" should "return true" in {
+    Chapter2.isSorted(Array[Int](0), (a: Int, b: Int) => false) should be (true)
+  }
+
+  "isSorted of an sorted array" should "return true" in {
+    Chapter2.isSorted(Array[Int](0, 1, 2, 3, 4), (a: Int, b: Int) => a < b) should be (true)
+  }
+
+  "isSorted of an unsorted array" should "return false" in {
+    Chapter2.isSorted(Array[Int](0, 1, 2, 3, 2), (a: Int, b: Int) => a < b) should be (false)
+  }
+
+}
